@@ -3,5 +3,8 @@
   "version": "0.1.0",
   "dependencies": {
     "angular": "~1.4.4"
+  },
+  "devDependencies": {
+    "angular-ui-router": "~0.2.15"
   }
 }

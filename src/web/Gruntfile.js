@@ -4,6 +4,8 @@ module.exports = function(grunt) {
     // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-connect');
+
+    
   // Default task(s).
   grunt.registerTask('default', ['uglify']);
     
@@ -17,12 +19,7 @@ grunt.loadNpmTasks('grunt-contrib-connect');
         keepalive: true,
         protocol:"http",  
           hostname:"localhost",
-        base: {
-          path: 'app',
-          options: {
-            index: 'index.html'
-          }
-        }
+        base:"app"
       }
     }
   },
@@ -32,7 +29,7 @@ grunt.loadNpmTasks('grunt-contrib-connect');
       },
       build: {
         //src: 'src/<%= pkg.name %>.js',
-        //dest: 'build/<%= pkg.name %>.min.js'
+        //dest: 'dest/<%= pkg.name %>.min.js'
       }
     }
   });
